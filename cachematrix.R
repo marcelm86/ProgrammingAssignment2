@@ -1,5 +1,5 @@
 
-## First put the matrix into cache
+## First put the matrix into cache and emptly the matrix inverse
 
 makeCacheMatrix <- function(x = matrix()) {
       Am<<- x
