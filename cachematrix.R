@@ -1,16 +1,19 @@
-## Put comments here that give an overall description of what your
-## functions do
 
-## Write a short comment describing this function
+## First put the matrix into cache
 
 makeCacheMatrix <- function(x = matrix()) {
-
+      Am<<- x
+      Ai <<- NULL
+      Am
 }
 
 
-## Write a short comment describing this function
+## Now colculate the inverse and print it. But if the inverse matrix already 
+## exist, print it without calculate it
 
 cacheSolve <- function(x, ...) {
-        ## Return a matrix that is the inverse of 'x'
+      if (is.null(Ai)){
+        Ai<<-solve(Am)
+      }
+      Ai
 }
-##
